@@ -19,7 +19,7 @@ class Solution:
             current.next = ListNode(val)
             current = current.next
             if lists[i]:
-                heapq.heappush(ks, (lists[i].val, i)) # add the next node of each list to it. it will keep the order because the lists is sorted
+                heapq.heappush(ks, (lists[i].val, i)) # add the next node of each list to it. it will keep the order because the lists are sorted
                 lists[i] = lists[i].next
         
         return root.next
