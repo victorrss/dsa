@@ -26,7 +26,7 @@ class Solution:
                 return False
             # Validing range and invalid caracters
             octetInt = self.tryParseInt(octet)
-            if octetInt == None or (octetInt < 0 or octetInt > 255):
+            if octetInt == None or octetInt < 0 or octetInt > 255:
                 return False
 
         return True
