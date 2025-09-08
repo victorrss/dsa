@@ -1,3 +1,4 @@
+"""
 // Title: Vowel in Every 3-Length Block
 // Task: Given a string s, split it into consecutive, non-overlapping blocks of length 3 (ignore the last block if it has fewer than 3 chars). For each full block, return True if it contains at least one vowel (a,e,i,o,u, case-insensitive), otherwise False.
 
@@ -8,6 +9,7 @@
 // 1 <= len(s) <= 10^5 — O(n) solution expected.
 
 // Python solution + tests
+"""
 from typing import List
 
 def vowel_blocks(s: str) -> List[bool]:
