@@ -11,13 +11,12 @@
 from typing import List
 
 def vowel_blocks(s: str) -> List[bool]:
-    vowels = set("aeiouAEIOU")
-    res: List[bool] = []
-    # step through the string in chunks of size 3
-    for i in range(0, len(s) - (len(s) % 3), 3):
+    vowels = "aeiouAEIOU"
+    result = []
+    for i in range(0, len(s) // 3 * 3, 3):   # só blocos completos
         block = s[i:i+3]
-        res.append(any(ch in vowels for ch in block))
-    return res
+        result.append(any(c in vowels for c in block))
+    return result
 
 # quick tests
 if __name__ == "__main__":
